@@ -1,0 +1,60 @@
+@import '../../../assets/styles/scss/reset.scss';
+
+.login{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background: rgb(147,144,198);
+    background: linear-gradient(90deg, rgba(147,144,198,1) 0%, rgba(38,239,255,1) 50%, rgba(90,115,223,1) 100%);
+
+    &__container{
+        max-width: 450px;  
+        width:450px;
+        background-color: rgb(255, 255, 255);
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        flex-direction:column;
+        padding:10px;
+        padding-bottom: 50px;
+        padding-top: 120px;
+        border-radius: 10px;
+        position: relative;
+    }
+
+    &__logo{
+        width: 100%;
+        transform: scale(1.2);
+        // background: rgb(147,144,198);
+        // background: linear-gradient(90deg, rgba(147,144,198,1) 0%, rgba(38,239,255,1) 50%, rgba(90,115,223,1) 100%);
+        backdrop-filter: blur(20px);
+        position:absolute;
+        top: -90px;
+        box-shadow:  -1px 15px 30px -5px rgba(38, 241, 255, 0.268);
+    }
+
+    &__fields{
+        display: flex;
+        justify-content:center;
+        align-items:center;
+        flex-direction:column;
+        // background-color: blue;
+        width: 80%;
+    }
+    
+    &__fields > :not(input:last-child)  {
+        margin-bottom: 30px;    
+    }
+
+    &__fields > input:last-child {
+        margin-top: 40px;    
+    }
+
+    &__fields input{
+        width: 90%;
+        height: 55px;
+        padding:5px;
+        border: solid 1px rgba(19, 42, 60, 0.116);
+    }
+
+}
